@@ -1,19 +1,20 @@
-*{
-    box-sizing: border-box;
-    font-weight: normal;
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
 }
 
 body{
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, blue, green);
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 
 .calculator-grid{
     display: grid;
     justify-content: center;
     align-content: center;
-    /* min-height: 100vh; */
+    min-height: 100vh;
      grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 
@@ -38,7 +39,7 @@ body{
     grid-column: 1 /-1;
     background-color: rgba(0, 0, 0, .75);
     display: flex;
-    align-items: flex;
+    align-items: flex-end;
     flex-direction: column;
     padding: 10px;
     justify-content: space-around;
@@ -52,5 +53,5 @@ body{
 }
 .output .current-operand{
     color: white;
-    font-size: 2.5 rem;
+    font-size: 4.5 rem;
 }
